@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    
+}
+
+
+/*     esta classe abaixo serve para fazer o label ser lido sem aparecer na tela*/
+.sr-only{
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+:root{
+
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+ 
+    font-size: 1.6rem;
+}
+
+input, select, button{
+
+    font-family: 'roboto';
+    all:unset;
+}
+
+header{
+
+    min-height: 53.2rem;
+    background-color: #f8f8ff;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;/* faz com que oque transbordarr dessa div nao apareça*/
+    display: grid;
+    gap: 4rem; 
+    
+    border-bottom: #6246EA  1.5px dashed;
+  /*  place-content: center;   serve para alinhar o conteudo no centro para display grid */
+}
+
+header::before{
+
+       content:"";
+       
+       background-image: url(./assets/folhas.png);
+       width: 40.7rem;
+       height: 34.5rem;
+       position: absolute;
+       z-index: 0;
+       top: -2.3rem;
+       left: -2.7rem;
+}
+
+header .content{
+
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+    width: fit-content;
+    
+    position: relative;
+    z-index: 1;
+}
+
+header .top{
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 1.8rem;
+
+    width: 64.7rem;
+    height: 16.4rem;
+}
+
+header p{
+    font-family: 'roboto';
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(233, 56, 130);
+}
+
+header h1{
+    font-family: 'roboto';
+    font-weight: 700;
+    max-width: 64.7rem;
+    color: rgb(52, 3, 85);
+}
+
+header h1 span{
+    font-family: 'roboto';
+    font-weight: 700;
+    color: rgb(121, 13, 223);
+}
+
+header::after{
+    content:"";
+    
+    background-image: url(./assets/mulher.png);
+    width: 41.4rem;
+    height: 33rem;
+
+    position: absolute;
+    z-index: 0;
+    bottom: -1.2rem;
+    right: 0;
+
+}
+
+
+header .busca{
+    
+    box-sizing: border-box;
+    background: rgb(254, 253, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4rem;
+    gap: 2.4rem;
+
+    border-radius: 1rem;
+    border: 0.1rem solid #EAEAEA;
+}
+
+ion-icon {
+    color: rgb(231, 24, 24);
+  }
+
+ion-icon {
+    font-size: 24px;
+  }
+
+.campo-de-busca.input{
+
+    display: flex;
+    border-radius: 0.5rem;
+    background: #F4F4FF;
+    align-items: center;
+    text-align: left;
+    gap: 1.2rem;
+
+    padding: 1.2rem 0.8rem 1.2rem 1.4rem;    
+    
+    font-weight: 400;
+    border: 0.1rem;
+    margin: auto;
+
+}
+
+/*select{
+
+    border-radius: 0.5rem;
+    background: #F4F4FF;
+    background-repeat: no-repeat;
+    padding: 1.2rem 0.8rem 1.2rem 1.4rem;
+    gap: 1.2rem;
+    font-weight: 400;
+    border: 0.1rem;
+
+    width: 34.8rem;
+    height: 4.8rem;
+
+}*/
+
+button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(254, 253, 255) ;
+
+    padding: 1.2rem 3.2rem;
+    font-family: 'roboto';
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: solid;
+
+    width: 16.9rem;
+    height: 4.8rem;
+
+    background: #6246EA;
+    border-radius: 0.5rem;
+    border: 0.1rem;
+}
+
+.campo-de-busca.select{
+
+    display: flex;
+    
+    align-items: center;
+    margin: auto;
+
+
+    border-radius: 0.5rem;
+    background: #F4F4FF;
+    
+    padding: 1.2rem 0.8rem 1.2rem 1.4rem;
+    gap: 1.2rem;
+    font-weight: 400;
+    border: 0.1rem;
+    
+}
