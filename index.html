@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
-    
+    <script src="index.js"></script>
 
     <title>Carnaval</title>
 </head>
@@ -33,7 +33,7 @@
 
                             <label class="sr-only" for="name">pesquisa por nomes</label>
                             <ion-icon name="search-outline"></ion-icon>
-                            <input type="text" id= "name" name="busque por nome" placeholder="busque por nome"></imput>
+                            <input type="text" id= "filter" name="search" placeholder="busque por nome"></imput>
 
                         </div>
                       
@@ -45,17 +45,19 @@
                             <select name="cidades" id="cidades" >
 
                             <option value="0">Selecione uma cidade</option>
-                            <option value="1">Nioaque-ms</option>
-                            <option value="2">Jardim-ms</option>
-                            <option value="3">Campo Grande-ms</option>
+                            <option value="1">São Paulo - SP</option>
+                            <option value="2">Curitiba -PR</option>
+                            <option value="3">Florianópolis - SC</option>
+                            <option value="4">Salvador - BA</option>
+                            <option value="5">Rio de Janeiro - RJ</option>
 
                             </select>
-                            <ion-icon name="chevron-down-outline"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="setinha"></ion-icon>
 
                         </div>
                         
 
-                        <button class="primary">buscar agora</button>
+                        <button>buscar agora</button>
 
                     </form>
                 
@@ -75,14 +77,14 @@
 
                 <div class="view">
                     <button class="primary">LISTA</button>
-                    <button class="secundary">MAPA</button>
+                    <button class="secundary" ><a href="https://www.google.com.br/maps/place/Brasil/@-13.6636374,-69.6464827,4z/data=!3m1!4b1!4m6!3m5!1s0x9c59c7ebcc28cf:0x295a1506f2293e63!8m2!3d-14.235004!4d-51.92528!16zL20vMDE1ZnI?hl=pt-BR" target="_blank">MAPA</a></button>
                 </div>
                 
             </section>
 
-            <section class="cards">
+            <ul class="cards">
 
-                <div class="card">
+                <li class="card">
 
                     <img src="./assets/01.jpg" alt="">
 
@@ -93,16 +95,16 @@
 
                     <div class="loc">
 
-                        <ion-icon name="location-outline"></ion-icon>
-                        São Paulo - SP
+                        
+                        <a href="https://www.google.com.br/maps/place/S%C3%A3o+Paulo,+SP/@-23.6815315,-46.8754826,10z/data=!3m1!4b1!4m6!3m5!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5557714!4d-46.6395571!16zL20vMDIycGZt?hl=pt-BR" target="_blank"><ion-icon name="location-outline"></ion-icon> São Paulo - SP</a> 
                     </div>
                     
 
                     </div>
                     
-                </div>
+                </li>
 
-                <div class="card">
+                <li class="card">
 
                     <img src="./assets/02.jpg" alt="">
 
@@ -113,16 +115,16 @@
 
                     <div class="loc">
 
-                        <ion-icon name="location-outline"></ion-icon>
-                        Florianópolis - SC
+                        <a href="https://www.google.com.br/maps/place/Florian%C3%B3polis,+SC/@-27.5707056,-48.7504611,10z/data=!3m1!4b1!4m6!3m5!1s0x9527394eb2c632d7:0x81bc550b6a04c746!8m2!3d-27.5948036!4d-48.5569286!16s%2Fg%2F11bc6xlppd?hl=pt-BR" target="_blank"><ion-icon name="location-outline"></ion-icon>
+                            Florianópolis - SC</a>
                     </div>
                     
 
                     </div>
                     
-                </div>
+                </li>
 
-                <div class="card">
+                <li class="card">
 
                     <img src="./assets/03.jpg" alt="">
 
@@ -133,16 +135,17 @@
 
                     <div class="loc">
 
-                        <ion-icon name="location-outline"></ion-icon>
-                        Curitiba - PR
+                        
+                        <a href="https://www.google.com.br/maps/place/Curitiba,+PR/@-25.4947402,-49.4298817,11z/data=!3m1!4b1!4m6!3m5!1s0x94dce35351cdb3dd:0x6d2f6ba5bacbe809!8m2!3d-25.4372382!4d-49.2699727!16zL20vMDI4bXBy?hl=pt-BR" target="_blank"><ion-icon name="location-outline"></ion-icon>
+                            Curitiba - PR </a>
                     </div>
                     
 
                     </div>
                     
-                </div>
+                </li>
 
-                <div class="card">
+                <li class="card">
 
                     <img src="./assets/04.jpg" alt="">
 
@@ -153,13 +156,13 @@
 
                     <div class="loc">
 
-                        <ion-icon name="location-outline"></ion-icon>
-                        Curitiba - PR
+                        <a href="https://www.google.com.br/maps/place/Curitiba,+PR/@-25.4947402,-49.4298817,11z/data=!3m1!4b1!4m6!3m5!1s0x94dce35351cdb3dd:0x6d2f6ba5bacbe809!8m2!3d-25.4372382!4d-49.2699727!16zL20vMDI4bXBy?hl=pt-BR" target="_blank"><ion-icon name="location-outline"></ion-icon>
+                            Curitiba - PR </a>
                     </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="card">
+                <li class="card">
 
                     <img src="./assets/05.jpg" alt="">
 
@@ -170,11 +173,12 @@
 
                     <div class="loc">
 
-                        <ion-icon name="location-outline"></ion-icon>
-                        São Paulo - SP
+                        
+
+                        <a href="https://www.google.com.br/maps/place/S%C3%A3o+Paulo,+SP/@-23.6815315,-46.8754826,10z/data=!3m1!4b1!4m6!3m5!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5557714!4d-46.6395571!16zL20vMDIycGZt?hl=pt-BR" target="_blank"><ion-icon name="location-outline"></ion-icon> São Paulo - SP</a>
                     </div>
                     </div>
-                </div>
+                </li>
 
                 <div class="card">
 
@@ -187,13 +191,13 @@
 
                     <div class="loc">
 
-                        <ion-icon name="location-outline"></ion-icon>
-                        salvador - BA
+                         <a href="https://www.google.com.br/maps/place/Salvador,+BA/@-12.9015883,-38.4901453,12z/data=!3m1!4b1!4m6!3m5!1s0x716112050422ebd:0xf71c84369573db9d!8m2!3d-12.9777378!4d-38.5016363!16s%2Fg%2F1ymsvkdl1?hl=pt-BR" target="_blank"><ion-icon name="location-outline"></ion-icon>
+                            salvador - BA</a>
                     </div>
                     </div>
                 </div>
 
-                <div class="card">
+                <li class="card">
 
                     <img src="./assets/07.jpg" alt="">
 
@@ -204,13 +208,13 @@
 
                     <div class="loc">
 
-                        <ion-icon name="location-outline"></ion-icon>
-                        Rio de Janeiro - RJ
+                         <a href="https://www.google.com.br/maps/place/Rio+de+Janeiro,+RJ/@-22.9137531,-43.5860657,11z/data=!3m1!4b1!4m6!3m5!1s0x9bde559108a05b:0x50dc426c672fd24e!8m2!3d-22.9068467!4d-43.1728965!16zL20vMDZnbXI?hl=pt-BR" target="_blank"><ion-icon name="location-outline"></ion-icon>
+                            Rio de Janeiro - RJ</a>
                     </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="card">
+                <li class="card">
 
                     <img src="./assets/08.jpg" alt="">
 
@@ -221,13 +225,13 @@
 
                     <div class="loc">
 
-                        <ion-icon name="location-outline"></ion-icon>
-                        salvador - BA
+                        <a href="https://www.google.com.br/maps/place/Salvador,+BA/@-12.9015883,-38.4901453,12z/data=!3m1!4b1!4m6!3m5!1s0x716112050422ebd:0xf71c84369573db9d!8m2!3d-12.9777378!4d-38.5016363!16s%2Fg%2F1ymsvkdl1?hl=pt-BR" target="_blank"><ion-icon name="location-outline"></ion-icon>
+                            salvador - BA</a>
                     </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="card">
+                <li class="card">
 
                     <img src="./assets/09.jpg" alt="">
 
@@ -237,21 +241,22 @@
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
 
                     <div class="loc">
-
-                        <ion-icon name="location-outline"></ion-icon>
-                        Rio de Janeiro - RJ
+                        <a href="https://www.google.com.br/maps/place/Rio+de+Janeiro,+RJ/@-22.9137531,-43.5860657,11z/data=!3m1!4b1!4m6!3m5!1s0x9bde559108a05b:0x50dc426c672fd24e!8m2!3d-22.9068467!4d-43.1728965!16zL20vMDZnbXI?hl=pt-BR" target="_blank"><ion-icon name="location-outline"></ion-icon>
+                            Rio de Janeiro - RJ</a>
                     </div>
                     </div>
-                </div>
+                </li>
 
 
-            </section>           
+            </ul>           
                         
+            
 
             </div>
     </main>
 
         
+    
         
 
     
