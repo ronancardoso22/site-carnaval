@@ -90,6 +90,19 @@ body{
     background-color: #faf7ec;
 }
 
+body::-webkit-scrollbar{
+    width: 1.1rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #f8f8ff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #6c5ac5b0;
+    border-radius: 0.3rem;
+}
+
 input, select, button{
 
     font-family: 'roboto';
